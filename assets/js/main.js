@@ -45,29 +45,28 @@
    */
   const scrollto = (el) => {
     let header = select('#header')
-    let offset = header.offsetHeight
-
-    if (!header.classList.contains('header-scrolled')) {
-      offset -= 20
-    }
 
     let elementPos = select(el).offsetTop
     window.scrollTo({
-      top: elementPos - offset,
+      top: elementPos - 80,
       behavior: 'smooth'
     })
   }
 
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
+   * AND, show the logo in the top left when page is scrolled - SGO
    */
   let selectHeader = select('#header')
+  let headerLogo = select('#header-logo')
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 500) {
         selectHeader.classList.add('header-scrolled')
+        headerLogo.classList.remove('d-none')
       } else {
         selectHeader.classList.remove('header-scrolled')
+        headerLogo.classList.add('d-none')
       }
     }
     window.addEventListener('load', headerScrolled)

@@ -10,8 +10,8 @@
     <title>SeniorCircle: Brighten your community - together.</title>
 
   <!-- TODO: Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon-thick.PNG" rel="icon">
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,18 +45,25 @@
     <div class="container d-flex justify-content-between align-items-center">
 
       <div class="logo">
-        <a href="#home"><img src="assets/img/logo.png" alt="SeniorCircle logo" class="img-fluid"></a>
+        <a href="#home"><img id="header-logo" src="assets/img/logo-thick.PNG" alt="SeniorCircle logo" class="img-fluid"></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a class="scrollto" href="#home">Home</a></li>
+          <li class="dropdown"><a href="#process" class="scrollto"><span>Process</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#A1" class="scrollto">Needfinding</a></li>
+              <li><a href="#A2" class="scrollto">Experience Prototype</a></li>
+              <li><a href="#A4" class="scrollto">Concept Video</a></li>
+              <li><a href="#A5" class="scrollto">Lo-fi Prototype</a></li>
+            </ul>
+          </li>
+          <li><a href="#team"class="scrollto">Team</a></li>
+          <!-- <li><a href="#"class="scrollto">Portfolio</a></li>
+          <li><a href="#"class="scrollto">Team</a></li>
+          <li><a href="#"class="scrollto">Blog</a></li>
+          <li><a href="#"class="scrollto">Contact Us</a></li> -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -70,13 +77,14 @@
     <div class="container position-relative">
       <div class="row justify-content-center">
         <div class="col-xl-8">
-          <h1 class="font-SC">SeniorCircle</h1>
+          <img src="assets/img/logo-thick.PNG" alt="SeniorCircle logo" class="img-fluid">
           <h2 class="font-annie"><em>Brighten your community &#8212; together.</em></h2>
           <p>We aspire to mitigate feelings of <span class="text-decoration-underline">loneliness</span> and <span class="text-decoration-underline">isolation</span> in care home residents by encouraging them to <span class="text-decoration-underline yellow">engage</span> with one another in <span class="text-decoration-underline">collaborative tasks</span> that <span class="text-decoration-underline">strengthen their community</span>.</p>
         </div>
       </div>
     </div>
-</section><!-- End Hero No Slider Section -->
+</section>
+<!-- End Hero No Slider Section -->
 
   <main id="main">
     <!-- ======= Why Us Section ======= -->
@@ -112,78 +120,79 @@
     <!-- End Why Us Section -->
 
     <!-- ======= Process Section ======= -->
-    <section class="process">
+    <section id="process" class="process">
       <div class="container">
         <div class="section-title">
           <h1>Process</h1>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>You see, what happened was, we did a bunch of things. Like, a lot of things, every week, non-stop. The workload is a lot. And I think I need some more text here, but I'm running out of things to say.</p>
         </div>
 
-        <div class="row">
+        <div class="row" id="A1">
+        <h2>Needfinding</h2>
           <div class="col-md-5">
             <img src="assets/img/features-1.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-4">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+            <!-- <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3> -->
+            <p>
+              We spoke with three people who identified as seniors about their lives and what challenges they face at their age.
             </p>
-            <ul>
+            <!-- <ul>
               <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-            </ul>
+            </ul> -->
+            <div class="container text-center">
+                <a class="btn btn-blue">Slides</a>
+                <a class="btn btn-yellow">PowerPoint</a>
+                <a class="btn btn-red">PDF</a>
+            </div>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="A2">
+            <h2>Experience Prototype</h2>
           <div class="col-md-5 order-1 order-md-2">
             <img src="assets/img/features-2.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-5 order-2 order-md-1">
-            <h3>Corporis temporibus maiores provident</h3>
-            <p class="fst-italic">
+            <!-- <h3>Corporis temporibus maiores provident</h3> -->
+            <!-- <p class="fst-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
+            </p> -->
+            <p>After analyzing our initial findings, we interviewed three more seniors about their ability to find and engage with a community. </p>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="A4">
+            <h2>Concept Video</h2>
           <div class="col-md-5">
             <img src="assets/img/features-3.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-5">
-            <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
-            <ul>
+            <!-- <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3> -->
+            <p>Our concept video illustrates our idea of encouraging folks who live in care homes to work together and accomplish a community goal.</p>
+            <!-- <ul>
               <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
               <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
               <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
-            </ul>
+            </ul> -->
           </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="A5">
+            <h2>Lo-fi Prototype</h2>
           <div class="col-md-5 order-1 order-md-2">
             <img src="assets/img/features-4.svg" class="img-fluid" alt="">
           </div>
           <div class="col-md-7 pt-5 order-2 order-md-1">
-            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
+            <!-- <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3> -->
+            <p>We tested our paper prototype with three seniors and uncovered additional insights on how to proceed with our user interface. </p>
+            <!-- <p>
               Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
               culpa qui officia deserunt mollit anim id est laborum
-            </p>
+            </p> -->
           </div>
         </div>
 
@@ -193,43 +202,49 @@
 
 
 
-    <!-- ======= Services Section ======= -->
-    <!-- This can be the team part -->
-    <section class="services">
+    <!-- ======= Team Section ======= -->
+    <section class="team" id="team">
       <div class="container">
+          <div class="section-title">
+            <h1>Team</h1>
+            <p>We're cool. We're quirky. We're fun.<br><em>We're Accessibility Team 10.</em></p>
+          </div>
 
         <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
             <div class="icon-box icon-box-pink">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <h4 class="title"><a href="">Annie N.</a></h4>
+              <h5><em>Title</em></h5>
+              <p class="description">great roommate</p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
-            <div class="icon-box icon-box-cyan">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-            </div>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+              <div class="icon-box icon-box-cyan">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4 class="title"><a href="">Cyrus D.</a></h4>
+                <h5><em>Title</em></h5>
+                <p class="description">fun to work with</p>
+              </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
-            <div class="icon-box icon-box-green">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
+          <div class="col-md-6 col-lg-4 d-flex align-items-stretch">
+              <div class="icon-box icon-box-green">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4 class="title"><a href="">Steven G. O.</a></h4>
+                <h5><em>Title</em></h5>
+                <p class="description">as silly as he looks</p>
+              </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
+          <!-- <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
             <div class="icon-box icon-box-blue">
               <div class="icon"><i class="bx bx-world"></i></div>
               <h4 class="title"><a href="">Nemo Enim</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -259,7 +274,7 @@
 
     <div class="footer-top">
       <div class="container">
-          <h4><em>Stanford University's CS 147, Winter 2022</em></h4>
+          <h4><em>Stanford University<br>CS 147<br> Winter 2022</em></h4>
         <!-- <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-links">
@@ -318,7 +333,7 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="/assets/js/main.js"></script>
 
 </body>
 
