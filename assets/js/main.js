@@ -61,12 +61,14 @@
   let headerLogo = select('#header-logo')
   if (selectHeader) {
     const headerScrolled = () => {
-      if (window.scrollY > 500) {
-        selectHeader.classList.add('header-scrolled')
-        headerLogo.classList.remove('d-none')
+      if (window.scrollY > 700) {
+        selectHeader.classList.add('header-scrolled');
+        headerLogo.classList.remove('d-none');
+        selectHeader.classList.remove('header-transparent');
       } else {
-        selectHeader.classList.remove('header-scrolled')
-        headerLogo.classList.add('d-none')
+        selectHeader.classList.remove('header-scrolled');
+        headerLogo.classList.add('d-none');
+        selectHeader.classList.add('header-transparent');
       }
     }
     window.addEventListener('load', headerScrolled)
