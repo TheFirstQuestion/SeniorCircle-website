@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-    font-size: 8em;
+    font-size: 6em;
 }
 
 h2 {
@@ -32,11 +32,6 @@ p {
     font-family: 'Bad Script', cursive;
     font-weight: normal !important;
     color: #eff580;
-}
-
-.font-annie {
-    font-family: 'Annie Use Your Telescope', cursive;
-    font-weight: normal !important;
 }
 
 .blue {
@@ -515,6 +510,7 @@ section {
 .team .icon-box-blue:hover {
   border-color: #2282ff;
 }
+
 /*--------------------------------------------------------------
 # Process
 --------------------------------------------------------------*/
@@ -648,7 +644,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #1e4356;
+  background: #97D19D;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
