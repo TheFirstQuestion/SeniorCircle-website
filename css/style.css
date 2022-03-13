@@ -2,16 +2,16 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Times New Roman", sans-serif;
+  font-family: "Nunito", "Times New Roman", sans-serif;
   color: black;
 }
 
 h1 {
-    font-size: 6em;
+    font-size: 4em;
 }
 
 h2 {
-    font-size: 5em;
+    font-size: 3em;
     text-align: center;
     font-style: italic;
 }
@@ -21,11 +21,11 @@ h4 {
 }
 
 h5 {
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
 p {
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 .font-SC {
@@ -35,7 +35,7 @@ p {
 }
 
 .blue {
-    color: #88b2e5;
+    color: #abc5e5;
 }
 
 .yellow: {
@@ -65,7 +65,7 @@ p {
 }
 
 .btn-blue {
-    background-color: #88b2e5;
+    background-color: #abc5e5;
 }
 
 .icon-box img {
@@ -75,10 +75,6 @@ p {
 
 .icon-box h5 {
     margin-bottom: 20px;
-}
-
-.icon-box {
-    height: 540px;
 }
 
 #stanfordLogo {
@@ -98,13 +94,79 @@ p {
     color: inherit;
 }
 
+.row {
+    flex-direction: row;
+    justify-content: center;
+    align-content: cen;
+}
+
+.col-md-7 {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+    padding-left: 2em;
+    text-align: center;
+}
+
+.col-md-5 {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+}
+
+.linkBox {
+    border-radius: 40px;
+    border-width: 10px;
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    padding: 0.8em;
+    padding-left: 1.8em;
+    padding-right: 1.8em;
+    color: black;
+    font-size: 1.5em;
+}
+
+.linkBox-blue {
+    border-color: #abc5e5;
+}
+
+.linkBox-yellow {
+    border-color: #f6c655;
+}
+
+.linkBox-green {
+    border-color: #97D19D;
+}
+
+.linkBox a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.linkBox a:hover {
+    font-weight: bold;
+}
+
+#A4 video {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 #header {
   height: 100px;
   z-index: 997;
-  background: #88b2e5;
+  background: #abc5e5;
 }
 
 #header.header-transparent {
@@ -112,7 +174,7 @@ p {
 }
 
 #header.header-scrolled {
-  background: #88b2e5;
+  background: #abc5e5;
   height: 80px;
 }
 
@@ -140,7 +202,6 @@ p {
 #header li a {
     text-decoration: none;
     font-size: 1.5em;
-    font-family: "Times New Roman", serif;
     margin-right: 20px;
 }
 
@@ -168,7 +229,6 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: #fff;
   white-space: nowrap;
@@ -339,7 +399,7 @@ p {
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: #88b2e5;
+  background-color: #abc5e5;
 }
 #home h2 {
   color: #fff;
@@ -355,7 +415,6 @@ p {
   color: #fff;
 }
 #home .btn-get-started {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -431,8 +490,7 @@ section {
 # Our Team
 --------------------------------------------------------------*/
 .team {
-  padding-bottom: 20px;
-  background-color: #eff580 !important;
+  background-color: #97D19D !important;
 }
 
 .team .icon-box {
@@ -445,68 +503,37 @@ section {
   text-align: center;
   border: 1px solid #fff;
   margin: auto;
-}
-
-.team .icon {
-  margin: 0 auto 20px auto;
-  padding-top: 17px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  width: 72px;
-  height: 72px;
-}
-.team .icon i {
-  font-size: 36px;
-  line-height: 1;
+  border-radius: 50px;
+  background-color: #FFFAF0;
+  width: 100%;
 }
 
 .team .title {
   font-weight: 700;
-  margin-bottom: 15px;
 }
 
 .team .title a {
   color: #111;
 }
+
 .team .description {
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 28px;
   margin-bottom: 0;
 }
-.team .icon-box-pink .icon {
-  background: #fceef3;
-}
-.team .icon-box-pink .icon i {
-  color: #ff689b;
-}
+
 .team .icon-box-pink:hover {
   border-color: #ff689b;
 }
-.team .icon-box-cyan .icon {
-  background: #e6fdfc;
-}
-.team .icon-box-cyan .icon i {
-  color: #3fcdc7;
-}
+
 .team .icon-box-cyan:hover {
   border-color: #3fcdc7;
 }
-.team .icon-box-green .icon {
-  background: #eafde7;
-}
-.team .icon-box-green .icon i {
-  color: #41cf2e;
-}
+
 .team .icon-box-green:hover {
   border-color: #41cf2e;
 }
-.team .icon-box-blue .icon {
-  background: #e1eeff;
-}
-.team .icon-box-blue .icon i {
-  color: #2282ff;
-}
+
 .team .icon-box-blue:hover {
   border-color: #2282ff;
 }
@@ -612,14 +639,14 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #88b2e5;
+  background: #abc5e5;
   padding: 0 0 30px 0;
   color: black !important;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #12BA85;
+  background: #FFFAF0;
   padding: 30px 0 15px 0;
   text-align: center;
 }
