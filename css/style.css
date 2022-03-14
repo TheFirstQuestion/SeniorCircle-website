@@ -97,7 +97,7 @@ p {
 .row {
     flex-direction: row;
     justify-content: center;
-    align-content: cen;
+    align-content: center;
 }
 
 .col-md-7 {
@@ -158,6 +158,29 @@ p {
 #A4 video {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.topBox {
+    width: 26%;
+    text-align: center;
+    margin: 2%;
+}
+
+.topBox img {
+    width: 40%;
+    margin-bottom: 2em;
+}
+
+.topBox h5 {
+    margin-bottom: 0.5em;
+}
+
+.blueBackground {
+    background-color: #abc5e5;
+    margin-bottom: 4em;
+    padding: 2em;
+    margin-left: -10em;
+    margin-right: -10em;
 }
 
 /*--------------------------------------------------------------
@@ -387,7 +410,7 @@ p {
 --------------------------------------------------------------*/
 #home {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -504,7 +527,7 @@ section {
   border: 1px solid #fff;
   margin: auto;
   border-radius: 50px;
-  background-color: #FFFAF0;
+  background-color: #fff;
   width: 100%;
 }
 
@@ -646,7 +669,7 @@ section {
 }
 
 #footer .footer-top {
-  background: #FFFAF0;
+  background: #fff;
   padding: 30px 0 15px 0;
   text-align: center;
 }

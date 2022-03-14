@@ -59,7 +59,7 @@
   let headerLogo = select('#header-logo')
   if (selectHeader) {
     const headerScrolled = () => {
-      if (window.scrollY > 700) {
+      if (window.scrollY > 600) {
         selectHeader.classList.add('header-scrolled');
         headerLogo.classList.remove('d-none');
         selectHeader.classList.remove('header-transparent');
